@@ -1131,8 +1131,30 @@ body {
     font-style: normal;
 }
   
+.apply-button {
+  display: inline-block;
+  background-color: var(--btn-apply);
+  color: #333;
+  padding: 12px 35px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+  min-width: 160px;
+}
+
 .apply-button:hover {
   background-color: var(--btn-apply-dark); /* Darker shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: #333;
 }
 
 .apply-button-container {
@@ -1146,6 +1168,7 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  margin-top: 40px;
 }
 
 #countdown-title {
@@ -1235,7 +1258,9 @@ body {
   }
 
   .apply-button {
-    font-size: 5vw;
+    font-size: 6vw;
+    padding: 15px 40px;
+    min-width: 250px;
   }
 
   .accordion {
